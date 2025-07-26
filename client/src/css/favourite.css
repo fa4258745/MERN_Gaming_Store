@@ -1,0 +1,112 @@
+.fav-container {
+  padding: 2rem;
+  background: linear-gradient(to right, #1e003b, #000000);
+  min-height: 100vh;
+}
+
+.fav-heading {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Orbitron", sans-serif;
+}
+
+.fav-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.fav-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 280px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #ffffff;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.fav-card:hover {
+  transform: scale(1.05) rotateX(2deg) rotateY(2deg);
+  box-shadow: 0 12px 45px rgba(0, 255, 255, 0.3);
+}
+
+.fav-img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.fav-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #00f0ff;
+  margin: 0.5rem 0;
+}
+
+.fav-desc,
+.fav-cat,
+.fav-price,
+.fav-total {
+  font-size: 0.9rem;
+  margin: 0.2rem 0;
+}
+
+.fav-qnty-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.8rem 0;
+}
+
+.fav-icon {
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #00f0ff;
+  transition: transform 0.2s ease;
+}
+
+.fav-icon:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+}
+
+.fav-qnty {
+  font-size: 1.1rem;
+}
+
+.fav-addtocart-btn {
+  margin-top: 1rem;
+  background: transparent;
+  color: #00f0ff;
+  border: 1px solid #00f0ff;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.fav-addtocart-btn:hover {
+  background: #00f0ff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+

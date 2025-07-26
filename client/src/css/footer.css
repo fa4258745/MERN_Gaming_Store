@@ -1,0 +1,74 @@
+.gaming-footer {
+  background: #0f172a;
+  background: #000;
+  color: #e2e8f0;
+  padding: 40px 20px 20px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  gap: 30px;
+}
+
+.footer-logo h2 {
+  font-size: 2rem;
+  color: #38bdf8;
+}
+
+.footer-logo p {
+  margin-top: 10px;
+  max-width: 300px;
+}
+
+.footer-links h3,
+.footer-social h3 {
+  color: #60a5fa;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 5px 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-links li:hover {
+  color: #38bdf8;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.footer-social .social-icons svg {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-social .social-icons svg:hover {
+  color: #38bdf8;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  border-top: 1px solid #1e293b;
+  padding-top: 15px;
+}
+
+

@@ -1,0 +1,687 @@
+@font-face {
+  font-family: "motufont";
+  src: url("./font/ArchivoBlack-Regular.ttf");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.bestGaming {
+  display: flex;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: 5rem;
+  line-height: 1;
+  z-index: 3;
+  margin: 0px 20px;
+  font-family: "motufont";
+  background-color: transparent;
+  display: flex;
+  gap: 10px;
+  color: transparent;
+  display: flex;
+  flex-direction: column;
+  -webkit-text-stroke: 0.8px #29be0f;
+  -webkit-text-stroke: 0.8px #7843e6;
+}
+
+.outlined:hover {
+  color: #29be0f;
+  transition: 0.2s ease-in;
+  text-shadow: 0px 0px 10px #ccd2cb1f;
+}
+.outlined {
+  color: #0b14c2;
+  color: transparent;
+  -webkit-text-stroke: 2px #1ae808ea;
+}
+
+.filled:hover {
+  color: #7843e6;
+}
+
+.futnik-container {
+  background: #18122e;
+  background: #0f0c1a;
+  background: #7843e6;
+  background: #000;
+  color: #e2e8f0;
+  font-family: "Orbitron", sans-serif;
+  padding: 30px;
+  position: relative;
+  
+}
+
+.futnik-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.brand {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.brand .futra {
+  color: #9c66ff;
+}
+
+.menu {
+  font-size: 1.2rem;
+  cursor: pointer;
+
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  background-color: #000;
+  height:100%;
+  padding: 20px ;
+  /* background-color: #21011a8b; */
+    /* background: #7943e634; */
+
+}
+
+.hero-text {
+  max-width: 100%;
+  display: flex;
+  padding: 20px;
+}
+
+.new-release h3 {
+  margin-top: 40px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.new-release p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #b4b4cc;
+}
+
+.hero-graphics {
+  position: relative;
+  width: 50%;
+}
+
+.monitor {
+  width: 200px;
+  position: absolute;
+  top: 40px;
+  left: 700px;
+  z-index: 1;
+}
+
+.controller {
+  width: 200px;
+  position: absolute;
+  top: 200px;
+  left: 780px;
+  z-index: 2;
+  opacity: 0.6;
+  border-radius: 100px;
+}
+
+.headphone {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 850px;
+  z-index: 1;
+}
+
+.profile {
+  position: absolute;
+  right: 100px;
+  height: 370px;
+  z-index: 4;
+  filter: drop-shadow(0 0 25px #b72fb0b5);
+}
+
+.top-pick h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+}
+
+.top-pick p {
+  font-size: 0.9rem;
+  color: #bdbde0;
+}
+
+.view-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #7843e6;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.images {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.images img {
+  width: 240px;
+  border-radius: 10px;
+}
+
+.images img:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in;
+}
+
+.monitor,
+.controller,
+.headphone,
+.profile {
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+}
+
+
+
+.glass-card {
+  width: 340px;
+  height: 340px;
+  background: #de5ad382;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid #DE5AD3;
+  box-shadow: 
+    0 8px 32px #DE5AD3,
+    inset 0 1px 0 #DE5AD3,
+    inset 0 -1px 0 #DE5AD3,
+    inset 0 0 20px 10px #DE5AD3;
+  position: relative;
+  overflow: hidden;
+  z-index: 1 !important ;
+
+
+
+
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+}
+
+.glass-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background:  linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==== Swiper Container ==== */
+.game-swiper {
+  margin-top: 30px;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 240px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(156, 102, 255, 0.3);
+}
+
+/* Optional: Customize swiper navigation arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #7843e6;
+}
+
+/* Optional: Customize swiper pagination dots */
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.4;
+}
+.swiper-pagination-bullet-active {
+  background: #7843e6;
+  opacity: 1;
+}
+
+
+
+.glass-card {
+  width: 340px;
+  height: 340px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 20px 10px rgba(255, 255, 255, 1);
+  position: relative;
+  overflow: hidden;
+  z-index: -4;
+}
+.glass-card {
+  width: 340px;
+  height: 340px;
+  background: #de5ad382;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid #DE5AD3;
+  box-shadow: 
+    0 8px 32px #DE5AD3,
+    inset 0 1px 0 #DE5AD3,
+    inset 0 -1px 0 #DE5AD3,
+    inset 0 0 20px 10px #DE5AD3;
+  position: relative;
+  overflow: hidden;
+  z-index: -4;
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+}
+
+.glass-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+/* New wrapper around the image */
+.slide-wrapper {
+  position: relative;
+  width: 240px;
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Image inside wrapper */
+.HoodieImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(156, 102, 255, 0.3);
+}
+
+/* Hover overlay shown only when image is hovered */
+.hover-overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  transition: bottom 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ✅ Trigger only when hovering the image wrapper */
+.slide-wrapper:hover .hover-overlay {
+  bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.hover-overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  transition: bottom 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.swiper-slide:hover .hover-overlay {
+  bottom: 0;
+}
+
+.hover-overlay button {
+  background: #38c400;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hover-overlay button:hover {
+  transform: scale(1.1);
+}
+
+
+.plus-icon{
+  border-radius: 50% !important;
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  /* Basic reset for layout */
+
+  /* Header */
+  .futnik-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .brand {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .menu {
+    font-size: 1rem;
+  }
+
+  /* Hero section */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .hero-text {
+    padding: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    text-align: center;
+    margin: 10px 0;
+    -webkit-text-stroke: 1px #7843e6;
+  }
+
+  /* Hide floating graphics */
+  .monitor,
+  .controller,
+  .headphone,
+  .profile {
+    display: none !important;
+  }
+
+  /* Image previews */
+  .images {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .images img {
+    width: 100px;
+  }
+
+  /* Small glass card */
+  .glass-card {
+    width: 240px;
+    height: 240px;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 16px;
+    box-shadow:
+      0 4px 20px #DE5AD3,
+      inset 0 1px 0 #DE5AD3,
+      inset 0 -1px 0 #DE5AD3,
+      inset 0 0 10px 5px #DE5AD3;
+  }
+
+  /* Swiper */
+  .game-swiper {
+    padding: 0 10px;
+  }
+
+  .swiper-slide,
+  .slide-wrapper {
+    width: 160px;
+    height: auto;
+  }
+
+  .HoodieImg {
+    width: 100%;
+    height: auto;
+  }
+
+  .hover-overlay button {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+
+  .view-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    margin: 20px auto 0;
+    display: block;
+  }
+
+  .new-release h3,
+  .top-pick h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .new-release p,
+  .top-pick p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .plus-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+
+
+
+
+.mySwiper {
+  width: 100%;
+  padding: 1rem;
+}
+
+.swiper-slide {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1rem;
+  margin: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+  transform: scale(1.03);
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Ensure cards look smaller on mobile */
+@media (max-width: 480px) {
+  .swiper-slide {
+    width: 90%;
+    font-size: 0.85rem;
+    padding: 0.75rem;
+  }
+}
+
+
+.custom-glass-card img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .custom-glass-card img {
+    max-height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-glass-card img {
+    max-height: 100px;
+    border-radius: 8px;
+  }
+  .btn-2 {
+    width:100px;
+  }
+}

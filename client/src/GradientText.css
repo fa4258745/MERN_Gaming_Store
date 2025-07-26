@@ -1,0 +1,87 @@
+.animated-gradient-text {
+  /* position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  cursor: pointer; */
+  font-size: 4rem;
+  line-height: 1;
+  transition: box-shadow 0.5s ease-out;
+  z-index: 3;
+  backdrop-filter: blur(10px);
+  margin: 0px 20px;
+  font-family: "motufont";
+  display: flex;
+  overflow: hidden;
+  gap: 10px;
+  color: transparent;
+  display: flex;
+  max-width: fit-content;
+  flex-direction: row;
+  align-items: center;
+  flex-direction: column;
+  -webkit-text-stroke: 0.8px #29be0f;
+  -webkit-text-stroke: 0.8px #7843e6;
+  border-radius: 1.25rem;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 300% 100%;
+  animation: gradient linear infinite;
+  border-radius: inherit;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.gradient-overlay::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: inherit;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #060010;
+  z-index: -1;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+      -webkit-text-stroke: 0.2px #fff;
+
+  }
+
+  50% {
+    background-position: 100% 50%;
+          -webkit-text-stroke: 1px #630aab;
+          
+        }
+        
+        100% {
+            background-position: 0% 50%;
+            -webkit-text-stroke: 2px #5307ec;
+  }
+}
+
+.text-content {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradient linear infinite;
+
+  -webkit-text-stroke: 0.8px #29be0f;
+  -webkit-text-stroke: 0.8px #7843e6;
+}

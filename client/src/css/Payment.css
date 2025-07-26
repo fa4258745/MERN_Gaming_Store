@@ -1,0 +1,72 @@
+/* Payment.css */
+
+.payment-container {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  color: #333;
+}
+
+.card-element-container {
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s ease-in-out;
+}
+
+.card-element-container:focus-within {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.25);
+}
+
+.payment-container .form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.payment-container .form-control:focus,
+.payment-container textarea:focus {
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.2);
+  border-color: #0d6efd;
+}
+
+.payment-container .btn-primary {
+  background: linear-gradient(to right, #007bff, #00b4d8);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.payment-container .btn-primary:hover {
+  background: linear-gradient(to right, #0056b3, #0096c7);
+  box-shadow: 0 0 12px rgba(0, 180, 216, 0.4);
+  transform: translateY(-1px);
+}
+
+.payment-container .order-summary {
+  font-size: 0.95rem;
+}
+
+.payment-container .order-summary .badge {
+  font-size: 0.75rem;
+  background-color: #f1f1f1;
+}
+
+.payment-container .order-summary .text-primary {
+  color: #0d6efd !important;
+}
+
+.payment-container .order-summary hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.payment-container .alert {
+  font-size: 0.95rem;
+  padding: 10px 15px;
+  border-radius: 0.4rem;
+}
+
+.payment-container .alert i {
+  font-size: 1.2rem;
+}
+
+.payment-container .text-danger {
+  font-size: 0.9rem;
+}

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+.cartdata-container {
+  padding: 30px;
+  background-color: #000000;
+  font-family: 'Orbitron', sans-serif;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.cartdata-heading {
+      text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  -webkit-text-stroke: 1px #13ff13;
+  color: black;
+}
+
+.cartdata-table {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+
+}
+
+.cartdata-thead {
+  background-color: #430e5a;
+  color: #00f0ff;
+}
+
+.cartdata-tbody tr:hover {
+  background-color: #251a3a;
+
+  transition: 0.3s ease;
+}
+
+.cartdata-img {
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+
+}
+
+.cartdata-icon {
+  margin: 0 10px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #41d614;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.cartdata-icon:hover {
+  transform: scale(1.2);
+  color: #ff00cc;
+  text-shadow: 0 0 8px #ff00cc;
+}
+
+.cartdata-row td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 15px;
+}

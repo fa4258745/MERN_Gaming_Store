@@ -1,0 +1,5 @@
+.img-fluid {
+   filter: drop-shadow(0 0 25px cyan);
+   overflow: hidden;
+
+}

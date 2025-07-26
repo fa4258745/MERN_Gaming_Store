@@ -1,0 +1,274 @@
+.gaming-navbar {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+  align-items: center;
+  font-family: "Orbitron", sans-serif;
+  top: 0;
+  z-index: 999 !important;  
+ color:#fff;
+  flex-wrap: wrap;
+
+}
+
+
+
+/* Left section */
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+    z-index: 2;  
+
+}
+
+/* Logo */
+.nav-logo {
+  font-size: 1.8rem;
+
+  font-weight: 700;
+  /* background: linear-gradient(to right, #00f0ff, #6a5acd); */
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+/* Hamburger (mobile only) */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #00f0ff;
+}
+
+/* Nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 40px;
+  top: 75px;
+  /* color: rgb(0, 255, 42); */
+  z-index: 999;
+  padding: 14px 5.8px;
+  /* border:1px  solid #fff; */
+
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.7);
+  background: rgba(152, 0, 150, 0.396);
+  background-color: #0159452a;
+
+  background-color: #1e293b;
+  border-left: 4px solid #00f0ff;
+  border-right: 4px solid #00f0ff;
+  transform: scale(1.05);
+  letter-spacing: 0.4px;
+  border-radius: 12px;
+
+}
+
+.nav-links:hover {
+  transition: background 0.3s ease, transform 0.3s ease;
+  transform: scale(1.05);
+  letter-spacing: 0.4px;
+
+  background-color: #0f172a;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #00f0ff;
+  transform: scale(1.1);
+}
+
+/* Right section */
+.nav-right {
+  position: fixed;
+  top: 13px;
+  right: 40px;
+  /* background-color: #750368a7;  */
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 10px 10px;
+  border: 1px solid #fff;
+
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #00f0ff44;
+  /* background: rgba(0, 0, 0, 0.7);
+  background: rgba(152, 0, 150, 0.396); */
+
+  /* background-color: #1e293b; */
+  border-left: 4px solid #fff;
+  border-right: 4px solid #fff;
+  transform: scale(1.05);
+  letter-spacing: 0.4px;
+  border-radius: 12px;
+
+  background: linear-gradient(to right, #6c0cb57f, rgba(183, 7, 104, 0.618));
+
+
+}
+/* Language & Currency */
+.lang-currency {
+  display: flex;
+  gap: 20px;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown-item select {
+  background: transparent;
+  color: white;
+  border: none;
+  font-weight: 500;
+  outline: none;
+}
+
+.flag {
+  width: 20px;
+  height: 14px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+/* Cart */
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.cart-text {
+  font-size: 0.9rem;
+}
+
+.cart-amount {
+  font-weight: bold;
+  color: #00f0ff;
+}
+
+.icon {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #00f0ff;
+  color: black;
+  font-size: 0.6rem;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
+
+.favorite {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.favorite .icon {
+  font-size: 20px;
+  margin-right: 6px;
+}
+
+.favorite-text {
+  font-size: 14px;
+}
+
+.favorite-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: #ff4081;
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========== RESPONSIVE ========== */
+@media screen and (max-width: 1024px) {
+  .gaming-navbar {
+    padding: 15px 25px;
+  }
+
+  .nav-logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-right {
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .lang-currency {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .cart {
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #111827;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #1e293b;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-right {
+    margin-top: 10px;
+  }
+}

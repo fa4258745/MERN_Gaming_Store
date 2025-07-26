@@ -1,0 +1,91 @@
+/* ProductDisplay.css */
+#prodisplay {
+  background: linear-gradient(145deg, #0a0f1c, #141b29);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+
+
+  width: 80%;
+  padding: 40px;
+  margin: 10px;
+  height: 100%;
+  border: 2px solid #ff00e6 ;
+}
+
+.pro-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.img-preview-thumbs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.img-preview-thumbs img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #00f0ff;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+
+}
+
+.img-preview-thumbs img:hover {
+  border-color: #ff00e6;
+  transform: scale(1.05);
+}
+
+.main-product-img  {
+
+    margin-top: 15px;
+    padding:0;
+
+
+
+
+}
+
+.main-product-img img {
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+  border-radius: 20px;
+    border: 2px solid #2bff00 ;
+
+  box-shadow: 0 0 5px #2bff00;
+        object-fit: cover;
+
+}
+
+.product-details {
+  margin-top: 30px;
+}
+
+.product-details h1 {
+  font-size: 2rem;
+  color: #00f0ff;
+  margin-bottom: 10px;
+}
+
+.product-details h2 {
+  font-size: 1.5rem;
+  color: #ff00e6;
+  margin-bottom: 10px;
+
+}
+
+.glow-border {
+  border: 2px solid #00f0ff;
+  border-radius: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 12px #00f0ff;
+}
