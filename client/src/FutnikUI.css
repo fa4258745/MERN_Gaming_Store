@@ -649,39 +649,74 @@ body {
 
 
 
+@media (max-width: 360px) {
+  .hero {
+    padding: 15px 5px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 
+  .hero-text {
+    padding: 0;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
 
-/* Ensure cards look smaller on mobile */
-@media (max-width: 480px) {
-  .swiper-slide {
+  .title {
+    font-size: 1.8rem;
+    line-height: 1.1;
+    margin: 10px 0;
+    text-align: center;
+    -webkit-text-stroke: 0.7px #7843e6;
+  }
+
+  .glass-card {
     width: 90%;
-    font-size: 0.85rem;
-    padding: 0.75rem;
+    height: auto;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 14px;
+    box-shadow:
+      0 4px 16px #DE5AD3,
+      inset 0 1px 0 #DE5AD3,
+      inset 0 -1px 0 #DE5AD3,
+      inset 0 0 10px 5px #DE5AD3;
   }
-}
 
+  .glass-card::before,
+  .glass-card::after {
+    display: none;
+  }
 
-.custom-glass-card img {
-  width: 100%;
-  height: auto;
-  max-height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
-}
+  .new-release h3,
+  .top-pick h3 {
+    font-size: 1rem;
+  }
 
-@media (max-width: 768px) {
+  .new-release p,
+  .top-pick p {
+    font-size: 0.75rem;
+  }
+
+  .view-btn {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+  }
+
+  .hover-overlay button {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
+
   .custom-glass-card img {
-    max-height: 140px;
+    max-height: 90px;
+    border-radius: 6px;
   }
-}
 
-@media (max-width: 480px) {
-  .custom-glass-card img {
-    max-height: 100px;
-    border-radius: 8px;
-  }
-  .btn-2 {
-    width:100px;
+  .plus-icon {
+    width: 22px;
+    height: 22px;
   }
 }
