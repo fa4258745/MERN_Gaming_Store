@@ -1,14 +1,17 @@
-/* Payment.css */
+Payment.css
 
 .payment-container {
   font-family: 'Segoe UI', Roboto, sans-serif;
   color: #333;
+
 }
 
 .card-element-container {
   background-color: rgba(255, 255, 255, 0.75);
+  background-color: #000 !important;
+
   backdrop-filter: blur(4px);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid #01f023 !important;
   transition: border-color 0.2s ease-in-out;
 }
 
@@ -19,13 +22,12 @@
 
 .payment-container .form-label {
   font-weight: 600;
-  color: #333;
 }
 
 .payment-container .form-control:focus,
 .payment-container textarea:focus {
-  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.2);
-  border-color: #0d6efd;
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.2) !important;
+  border-color: #01f023 !important;
 }
 
 .payment-container .btn-primary {
@@ -70,3 +72,18 @@
 .payment-container .text-danger {
   font-size: 0.9rem;
 }
+
+
+
+.card-colour{
+  color: #fff !important;
+border :2px solid #01F023 !important;
+background-color: #000204 !important;
+box-shadow: 0px 0px 5px #01F023,0px 0px 5px #01F023 !important;
+}
+
+
+
+
+
+

@@ -10,41 +10,6 @@ const Footer = () => {
 
     <>
 
-  <section className="lastsection">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div>
-
-          <div>
-
-
-  <div className="image-stack">
-
-
-
-          </div>
-          <div className="last-sec-img">
-            <img src={controller1} />
-          </div>
-          </div>
-        </div>
-      </section>
-
-
 
 
 
@@ -54,6 +19,9 @@ const Footer = () => {
 
     <footer className="gaming-footer">
       <div className="footer-content">
+     <div className="last-sec-img">
+            <img src={controller1}  width={"100%"}/>
+          </div>
         <div className="footer-logo">
           <h2>GameZone    <img src={LOGO} style={{width:"55px"}}/>    </h2>
           <p>Your ultimate gaming store. Play. Stream. Dominate.</p>

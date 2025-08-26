@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 import { useState, useEffect } from "react";
 import axios from "axios";
 import BackEndUrl from "../config/BackendUrl";
@@ -16,12 +9,12 @@ import "../css/ProductCard.css";
 import { addtoCart } from "../CartSlice";
 import { useNavigate } from "react-router-dom";
 import ShinyText from "./ShinyText";
+import {addtoFavourite} from "../FavourtieSlice"
 
 const Home = () => {
   const [mydata, setMyData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState("All");
-
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const itemsPerPage = 6;
@@ -135,7 +128,24 @@ const Home = () => {
           <Card className="game-card" key={index}>
             <div className="badge">New</div>
             <div className="wishlist-icon"></div>
-            <FaHeart className="fav-icon" />
+            <FaHeart className="fav-icon" onClick={()=>
+            
+            
+                dispatch(
+      addtoFavourite({
+        id: key._id,
+        name: key.name,
+        description: key.description,
+        price: key.price,
+        category: key.category,
+        images: key.images,
+        defaultImage: key.defaultImage,
+        qnty: 1,
+      })
+    )
+            
+            
+             } />
             <Card.Img
               loading="lazy"
               variant="top"

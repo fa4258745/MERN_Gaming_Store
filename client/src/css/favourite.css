@@ -108,5 +108,70 @@
 
 
 
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 12px;
+  font-family: "Orbitron", sans-serif;
+  color: #00ff15;
+  text-align: center;
+}
 
+.pagination-controls button {
+  background: transparent;
+  border: 1px solid #00ff15;
+  padding: 8px 16px;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  font-weight: bold;
+}
 
+.pagination-controls button:hover:not(:disabled) {
+  background-color: #00ff15b6;
+  color: #000;
+}
+
+.pagination-controls button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pagination-controls span {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0 10px;
+}
+
+/* Swiper styles (unchanged but included for reference) */
+.home-swiper {
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 0px !important;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  background: #ffffff;
+  opacity: 0.6;
+  margin: 0 6px;
+  transition: transform 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #11ff00;
+  opacity: 1;
+  transform: scale(1.4);
+}

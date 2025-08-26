@@ -13,8 +13,7 @@ import axios from "axios";
 import { useState } from "react";
 import BackendURL from "../config/BackendUrl";
 // import Crysis from "../images/Crysis.png";
-import ControlVideo from "../images/Controller-blue.mp4"
-
+import ControlVideo from "../images/Controller-blue.mp4";
 
 function App() {
   const [adminid, setAdminId] = useState("");
@@ -28,8 +27,7 @@ function App() {
       let api = `${BackendURL}/admin/adminlogin`;
       const response = await axios.post(api, { adminid, password });
       localStorage.setItem("adminid", response.data.adminid);
-              localStorage.setItem("adminpassword", password);
-
+      localStorage.setItem("adminpassword", password);
       navigate("/admindashboard");
       console.log(response);
     } catch (error) {
@@ -49,14 +47,11 @@ function App() {
               className="img-fluid rounded shadow"
             /> */}
 
-   <div className="video-usb-flex">
-          <video width={500} height={550} autoPlay loop muted>
-            <source src={ControlVideo} />
-          </video>
-  </div>
-
-
-
+            <div className="video-usb-flex">
+              <video width={500} height={550} autoPlay loop muted>
+                <source src={ControlVideo} />
+              </video>
+            </div>
           </MDBCol>
 
           {/* Right Side Login Form */}

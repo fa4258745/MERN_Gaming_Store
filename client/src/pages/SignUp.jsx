@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import TextField from "@mui/material/TextField";
-import React from "react";
+
 import {
   MDBBtn,
   MDBContainer,
@@ -28,7 +28,7 @@ function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [showPassword, setShowPassword] = useState(false); // ✅ Moved here
+  const [showPassword, setShowPassword] = useState(false); 
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
   const handleMouseDownPassword = (event) => {

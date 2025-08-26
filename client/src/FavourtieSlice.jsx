@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { toast } from "react-toastify";
 const favouriteSlice = createSlice({
   name: "myfavourite",
 
@@ -11,7 +12,7 @@ const favouriteSlice = createSlice({
         (key) => key.id == actions.payload.id
       );
       if (data.length >= 1) {
-        alert("Product aleready added!");
+        toast.success("Product already added!");
       } else {
         state.favourite.push(actions.payload);
       }

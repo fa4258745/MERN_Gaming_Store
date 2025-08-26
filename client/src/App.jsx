@@ -17,7 +17,8 @@ import ProductDisplay from "./pages/ProductDisplay"
 import Controllers from "./categoryPage/controller"
 import DVDGAMES from "./categoryPage/dvdgames"
 import Search from "./pages/SearchResult"
-
+import { ToastContainer } from "react-toastify";import "react-toastify/dist/ReactToastify.css";import "react-toastify/dist/ReactToastify.css";
+import "react-toastify/dist/ReactToastify.css";
 const App = () => {
   return (
     <BrowserRouter>
@@ -49,11 +50,9 @@ const App = () => {
         <Route path="/admindashboard" element={<Dashboard />}>
           <Route path="uploadproduct" element={<UploadProduct />} />
              <Route path="customerorder" element={<CustomerOrder/>}/> 
-                 {/* All your Routes/Components */}
-  
-
         </Route>
       </Routes>
+         <ToastContainer position="top-right" autoClose={2000} />
     </BrowserRouter>
   );
 };

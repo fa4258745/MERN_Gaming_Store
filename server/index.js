@@ -1,6 +1,3 @@
-
-
-
 const express = require("express");
 const app = express();
 const cors = require("cors");
@@ -11,12 +8,12 @@ const UserRoute = require("./routes/userRoute");
 const adminRoute = require("./routes/adminRoute");
 const ProductRoute = require("./routes/productRoute");
 const paymentRoutes = require("./routes/paymentRoute");
-
 const port = process.env.PORT || 8000;
 
 mongoose.connect(process.env.DBCON).then(() => {
   console.log("ATLAS DATABASE ESTABLISHED");
 });
+
 app.use((req, res, next) => {
   res.setHeader(
     "Content-Security-Policy",
@@ -32,9 +29,6 @@ app.use((req, res, next) => {
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
-
-
-
 
 app.use("/admin", adminRoute);
 app.use("/product", ProductRoute);
