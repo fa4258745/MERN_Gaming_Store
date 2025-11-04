@@ -22,6 +22,7 @@
   width: 100%;
     z-index: 2;  
 
+
 }
 
 /* Logo */
@@ -47,6 +48,7 @@
   list-style: none;
   display: flex;
   gap: 35px;
+
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -56,7 +58,6 @@
   z-index: 999;
   padding: 14px 5.8px;
   /* border:1px  solid #fff; */
-
   backdrop-filter: blur(8px);
   background: rgba(0, 0, 0, 0.7);
   background: rgba(152, 0, 150, 0.396);
@@ -100,6 +101,7 @@
   display: flex;
   align-items: center;
   gap: 25px;
+
   padding: 10px 10px;
   border: 1px solid #fff;
 
@@ -213,62 +215,38 @@
   justify-content: center;
 }
 
-/* ========== RESPONSIVE ========== */
-@media screen and (max-width: 1024px) {
-  .gaming-navbar {
-    padding: 15px 25px;
-  }
 
-  .nav-logo {
-    font-size: 1.5rem;
-  }
 
-  .nav-right {
-    gap: 20px;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    margin-top: 10px;
-  }
 
-  .lang-currency {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-  }
-
-  .cart {
-    justify-content: flex-start;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
+@media screen and (max-width: 479px) {
   .nav-links {
-    display: none;
     flex-direction: column;
-    width: 100%;
-    background: #111827;
-    margin-top: 10px;
-    padding: 10px 0;
-    border-top: 1px solid #1e293b;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links li {
-    padding: 10px 20px;
-    width: 100%;
-    text-align: left;
-  }
-
-  .nav-right {
-    margin-top: 10px;
-  }
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    left:10px;
+     display:block;
+     width:100%;
+overflow-x: hidden;
+width: 300px;
+top: 140px;
+display: none;
+}
+.nav-right {
+    display: none;
+    position: fixed;
+    top: 10px;
+  left: 10px;
+width: 300px;
+flex-direction: column;
+    gap: 5px;
+}
+.nav-links li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 5px;
+}
 }

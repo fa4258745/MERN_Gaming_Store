@@ -51,6 +51,7 @@ body {
   text-shadow: 0px 0px 10px #ccd2cb1f;
 }
 .outlined {
+
   color: #0b14c2;
   color: transparent;
   -webkit-text-stroke: 2px #1ae808ea;
@@ -61,6 +62,7 @@ body {
 }
 
 .futnik-container {
+
   background: #18122e;
   background: #0f0c1a;
   background: #7843e6;
@@ -110,6 +112,7 @@ body {
 
 .hero-text {
   max-width: 100%;
+
   display: flex;
   padding: 20px;
 }
@@ -171,6 +174,7 @@ body {
   color: #ffffff;
   display: flex;
   align-items: flex-start;
+
 }
 
 .top-pick p {
@@ -232,6 +236,7 @@ body {
   position: relative;
   overflow: hidden;
   z-index: 1 !important ;
+
 
 
 
@@ -355,6 +360,7 @@ body {
   position: relative;
   overflow: hidden;
   z-index: -4;
+
 }
 
 .glass-card::before {
@@ -719,4 +725,13 @@ body {
     width: 22px;
     height: 22px;
   }
+  .outlined ,
+  .filled{
+    font-size: 30px;
+  }
+  .glass-card {
+    display: none;
+  }
+
+
 }

@@ -11,7 +11,6 @@
   -webkit-background-clip: text;
   background-clip: text;
   font-size: 2rem;
-
   display: flex;
   justify-content:center;
   align-items:center;
@@ -29,4 +28,11 @@
 
 .shiny-text.disabled {
   animation: none;
+}
+
+
+@media screen and (max-width: 360px) {
+  .shiny-text {
+    font-size: 1rem;
+  }
 }

@@ -422,7 +422,11 @@
 
 
 
-
+@media screen and (max-width:360px) {
+  .category-div  {
+    font-size:12px;
+  }
+}
 
 
 
@@ -449,3 +453,4 @@
   font-weight: bold;
   border-bottom: 2px solid #00f0ff;
 }
+

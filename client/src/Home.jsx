@@ -1,4 +1,7 @@
 import React, { useEffect } from "react";
+
+{/* <----------************   CSS STYLSHEET        ********** ---------------></-> */}
+
 import "./css/home2.css";
 // import "./css/home.css"
 import CustomCursor from "./CustomCursor";
@@ -649,7 +652,7 @@ const Home = () => {
                   {/* <IoGameController /> */}
                   <img src={CardImg} style={{ width: "100px" }} />
                 </div>
-                <div>
+                <div className="controller-text">
                   <p>Controllers</p>
                   <p>view </p>
                 </div>
@@ -667,7 +670,7 @@ const Home = () => {
                 <div className="controllerlogo">
                   <img src={CardImg1} style={{ width: "100px" }} />
                 </div>
-                <div>
+                <div className="controller-text">
                   <p>Gaming</p>
                   <p>Accessories</p>
                 </div>
@@ -689,7 +692,7 @@ const Home = () => {
                   {/* <IoGameController /> */}
                 </div>
 
-                <div>
+                <div className="controller-text">
                   <p>DVD</p>
                   <p>games</p>
                 </div>
@@ -712,7 +715,7 @@ const Home = () => {
                   {/* <IoGameController /> */}
                 </div>
 
-                <div>
+                <div className="controller-text">
                   <p>PS 5</p>
                   <p>view games</p>
                 </div>
@@ -736,7 +739,7 @@ const Home = () => {
                   {/* <IoGameController /> */}
                 </div>
 
-                <div>
+                <div className="controller-text">
                   <p>XBOX</p>
                   <p>view games</p>
                 </div>

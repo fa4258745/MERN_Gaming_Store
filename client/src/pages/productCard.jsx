@@ -94,11 +94,12 @@ const Home = () => {
         text="OUR PREMIUM GAMING PRODUCTS "
         disabled={false}
         speed={3}
-        className="custom-class "
+        className="custom-class txt-size"
       />
 
       {/* Category Buttons */}
       <div
+     className="category-div"
         style={{
           display: "flex",
           justifyContent: "center",
@@ -106,6 +107,7 @@ const Home = () => {
           gap: "20px",
           marginTop: "20px",
           flexWrap: "wrap",
+         
         }}
       >
         {categories.map((cat, index) => (

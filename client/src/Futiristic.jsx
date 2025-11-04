@@ -352,7 +352,9 @@ const Futiristic = () => {
     <div className="futnik-container">
       <header className="futnik-header">
         <h1 className="brand"></h1>
-        <div className="menu">Menu &#9776;</div>
+        <div className="menu" onClick={{
+
+        }}> &#9776;</div>
       </header>
 
       <section className="hero">
@@ -364,7 +366,7 @@ const Futiristic = () => {
                   colors={["#29BE0F", "#000000", "#722E6D", "#000000", "#000"]}
                   animationSpeed={8}
                   showBorder={false}
-                  className="custom-class"
+                  classname="gamingui"
                 >
                   <span className="outlined">BE</span>
                   <span className="filled">ST</span>
@@ -384,7 +386,7 @@ const Futiristic = () => {
           <img src={headphone} alt="Headphone" className="headphone" style={{ transform: `translate(${offset.x * 0.7}px, ${offset.y * 0.7}px)` }} />
         </div>
 
-        <div className="glass-card">
+        <div className=" he">
           <p style={{ color: "white", fontSize: "50px" }}>FUTU</p>
           <p style={{ color: "white", fontSize: "50px" }}>RISTIC</p>
         </div>
