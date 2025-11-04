@@ -237,10 +237,6 @@ body {
   overflow: hidden;
   z-index: 1 !important ;
 
-
-
-
-
 }
 
 .glass-card::before {
@@ -729,9 +725,9 @@ body {
   .filled{
     font-size: 30px;
   }
-  .glass-card {
+  /* .glass-card {
     display: none;
-  }
+  } */
 
 
 }
